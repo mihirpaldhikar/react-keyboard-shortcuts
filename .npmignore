@@ -1,0 +1,9 @@
+### IDEs Artifacts ###
+.idea
+.vscode
+
+### NodeJS Artifacts ###
+node_modules
+
+### Source ###
+src
