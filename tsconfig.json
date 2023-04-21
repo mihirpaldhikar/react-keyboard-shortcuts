@@ -13,7 +13,18 @@
     "outDir": "dist",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+    "paths": {
+      "@type/*": [
+        "./src/types/*"
+      ],
+      "@hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@contexts/*": [
+        "./src/contexts/*"
+      ]
+    }
   },
   "include": [
     "src/**/*"
