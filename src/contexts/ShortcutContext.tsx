@@ -26,7 +26,6 @@
 import { createContext, useState } from "react";
 import type ShortcutHandlers from "@interface/ShortcutHandlers";
 import type KeyBinding from "@type/KeyBinding";
-import type ShortcutProviderProps from "@props/ShortcutProviderProps";
 
 const initialShortcutHandlers: ShortcutHandlers = {
   // eslint-disable-next-line no-empty-function
@@ -45,7 +44,11 @@ function buildShortcut(keyBinding: KeyBinding): string {
   return Array.from(keyBinding).join("+");
 }
 
-function ShortcutProvider({ children }: ShortcutProviderProps): JSX.Element {
+function ShortcutProvider({
+  children,
+}: {
+  children: JSX.Element;
+}): JSX.Element {
   const [shortcutMap, addShortcutMap] = useState<Map<string, () => void>>(
     new Map()
   );

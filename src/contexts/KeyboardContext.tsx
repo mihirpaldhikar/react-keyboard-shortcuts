@@ -25,13 +25,16 @@
 
 import { createContext, useCallback, useEffect, useState } from "react";
 import type KeyBinding from "@type/KeyBinding";
-import type KeyboardProviderProps from "@props/KeyboardProviderProps";
 
 const initialKeyBinding = new Set<string>();
 
 const KeyboardContext = createContext<KeyBinding>(initialKeyBinding);
 
-function KeyboardProvider({ children }: KeyboardProviderProps): JSX.Element {
+function KeyboardProvider({
+  children,
+}: {
+  children: JSX.Element;
+}): JSX.Element {
   const [keyBinding, setKeyBinding] = useState<KeyBinding>(initialKeyBinding);
 
   const keyDownHandler = useCallback(

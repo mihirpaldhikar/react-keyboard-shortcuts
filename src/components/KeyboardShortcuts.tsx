@@ -25,11 +25,12 @@
 
 import ShortcutProvider from "@contexts/ShortcutContext";
 import KeyboardProvider from "@contexts/KeyboardContext";
-import type KeyboardShortcutProps from "@props/KeyboardShortcutProps";
 
 export default function KeyboardShortcuts({
   children,
-}: KeyboardShortcutProps): JSX.Element {
+}: {
+  children: JSX.Element;
+}): JSX.Element {
   return (
     <ShortcutProvider>
       <KeyboardProvider>{children}</KeyboardProvider>
