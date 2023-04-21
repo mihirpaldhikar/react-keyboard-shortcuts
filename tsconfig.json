@@ -26,6 +26,9 @@
       ],
       "@props/*": [
         "./src/props/*"
+      ],
+      "@interface/*": [
+        "./src/interface/*"
       ]
     }
   },
