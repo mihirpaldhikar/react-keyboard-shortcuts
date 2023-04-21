@@ -23,7 +23,7 @@
  * OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import { createContext, type ReactNode, useState } from "react";
+import { createContext, useState } from "react";
 import type ShortcutHandlers from "@interface/ShortcutHandlers";
 import type KeyBinding from "@type/KeyBinding";
 import type ShortcutProviderProps from "@props/ShortcutProviderProps";
@@ -45,7 +45,7 @@ function buildShortcut(keyBinding: KeyBinding): string {
   return Array.from(keyBinding).join("+");
 }
 
-function ShortcutProvider({ children }: ShortcutProviderProps): ReactNode {
+function ShortcutProvider({ children }: ShortcutProviderProps): JSX.Element {
   const [shortcutMap, addShortcutMap] = useState<Map<string, () => void>>(
     new Map()
   );

@@ -23,5 +23,16 @@
  * OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-export * from "./components";
-export * from "./hooks";
+import ShortcutProvider from "@contexts/ShortcutContext";
+import KeyboardProvider from "@contexts/KeyboardContext";
+import type KeyboardShortcutProps from "@props/KeyboardShortcutProps";
+
+export default function KeyboardShortcuts({
+  children,
+}: KeyboardShortcutProps): JSX.Element {
+  return (
+    <ShortcutProvider>
+      <KeyboardProvider>{children}</KeyboardProvider>
+    </ShortcutProvider>
+  );
+}

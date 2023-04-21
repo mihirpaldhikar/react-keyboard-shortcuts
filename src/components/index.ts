@@ -23,5 +23,4 @@
  * OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-export * from "./components";
-export * from "./hooks";
+export { default as KeyboardShortcuts } from "./KeyboardShortcuts";

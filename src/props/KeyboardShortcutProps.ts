@@ -23,5 +23,10 @@
  * OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-export * from "./components";
-export * from "./hooks";
+import { type ReactNode } from "react";
+
+interface KeyboardShortcutProps {
+  children: ReactNode;
+}
+
+export default KeyboardShortcutProps;

@@ -23,13 +23,7 @@
  * OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import {
-  createContext,
-  type ReactNode,
-  useCallback,
-  useEffect,
-  useState,
-} from "react";
+import { createContext, useCallback, useEffect, useState } from "react";
 import type KeyBinding from "@type/KeyBinding";
 import type KeyboardProviderProps from "@props/KeyboardProviderProps";
 
@@ -37,7 +31,7 @@ const initialKeyBinding = new Set<string>();
 
 const KeyboardContext = createContext<KeyBinding>(initialKeyBinding);
 
-function KeyboardProvider({ children }: KeyboardProviderProps): ReactNode {
+function KeyboardProvider({ children }: KeyboardProviderProps): JSX.Element {
   const [keyBinding, setKeyBinding] = useState<KeyBinding>(initialKeyBinding);
 
   const keyDownHandler = useCallback(
