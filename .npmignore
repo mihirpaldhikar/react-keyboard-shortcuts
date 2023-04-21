@@ -1,6 +1,7 @@
 ### IDEs Artifacts ###
 .idea
 .vscode
+*.iml
 
 ### NodeJS Artifacts ###
 node_modules
