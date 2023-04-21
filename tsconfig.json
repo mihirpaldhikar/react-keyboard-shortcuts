@@ -23,6 +23,9 @@
       ],
       "@contexts/*": [
         "./src/contexts/*"
+      ],
+      "@props/*": [
+        "./src/props/*"
       ]
     }
   },
