@@ -23,5 +23,8 @@
   "homepage": "https://github.com/mihirpaldhikar/react-keyboard-shortcuts#readme",
   "dependencies": {
     "@types/node": "^18.15.13"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
   }
 }
