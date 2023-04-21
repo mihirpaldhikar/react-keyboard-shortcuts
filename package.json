@@ -1,0 +1,27 @@
+{
+  "name": "@mihirpaldhikar/react-keyboard-shortcuts",
+  "version": "1.0.0",
+  "description": "A library for creating keyboard shortcuts in React JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihirpaldhikar/react-keyboard-shortcuts.git"
+  },
+  "keywords": [
+    "React",
+    "Keyboard",
+    "Shortcuts"
+  ],
+  "author": "Mihir Paldhikar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mihirpaldhikar/react-keyboard-shortcuts/issues"
+  },
+  "homepage": "https://github.com/mihirpaldhikar/react-keyboard-shortcuts#readme",
+  "dependencies": {
+    "@types/node": "^18.15.13"
+  }
+}
