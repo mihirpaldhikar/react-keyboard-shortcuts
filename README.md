@@ -44,3 +44,6 @@ export default function MyComponent(): JSX.Element {
   );
 }
 ```
+
+#### Author: [Mihir Paldhikar](https://mihirpaldhikar.com)
+
